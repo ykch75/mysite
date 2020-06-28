@@ -16,6 +16,25 @@ const firebaseConfig = {
     measurementId: "G-V6EYLK93GZ"
   };
 
+// function writeUserData(userId, name, email, imageUrl) {
+//     firebase.database().ref('users/' + userId).set({
+//       username: name,
+//       email: email,
+//       profile_picture : imageUrl
+//     });
+// }
+
+// export const getBlogs = async () => {
+//     const querySnapshot = await db.collection("blogs").get()
+//     const data = []
+//     querySnapshot.forEach((doc) => {
+//       data.push({ id: doc.id, title: doc.data().title })
+//     })
+//     return data
+//   }  
+//   export const createBlog = (blog) => db.collection("blogs").add({ title: blog })
+//   export const deleteBlog = (blogId) => db.collection('blogs').doc(blogId).delete()  
+
 //送信処理
 send.addEventListener('click', function() {
    var now = new Date();

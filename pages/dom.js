@@ -1,17 +1,5 @@
-import firebase from 'firebase'
-export const getBlogs = async () => {
-  const querySnapshot = await db.collection("blogs").get()
-  const data = []
-  querySnapshot.forEach((doc) => {
-    data.push({ id: doc.id, title: doc.data().title })
-  })
-  return data
-}
-
-export const createBlog = (blog) => db.collection("blogs").add({ title: blog })
-export const deleteBlog = (blogId) => db.collection('blogs').doc(blogId).delete()
-
-import './blog.css';
+import { getBlogs, createBlog, deleteBlog } from '../services/Firestore';
+import './dom.css';
 
 class BlogList {
   constructor() {
@@ -40,7 +28,6 @@ class BlogList {
     }
   }
 
-  //e=>paramator any
   async onSubmit(e) {
     e.preventDefault();
     const { value } = this.addInput;
@@ -77,22 +64,5 @@ class BlogList {
     this.list.innerHTML = lis;
   }
 }
-//class BlogList finish
-// 全部classやんか何これ
 
 const blogList = new BlogList();
-*/
-
-// var h2 = blog.querySelector('#blog-list h2');
-
-// h2.addEventListener('click',(e) => {
-//   console.log(e.target)
-// })
-
-const deleteButtons = blog.querySelectionAll('#blog-list .delete')
-deleteButtons.forEach((button)=>{
-  button.addEventListener('click',(e) => {
-    const li = e.target.parentElement;
-    li.parentElement.removeChild(li)
-  })
-})

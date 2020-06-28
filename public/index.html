@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBlog</title>
-    <script src="/__/firebase/7.15.5/firebase-analytics.js"></script>
-    <script src="/__/firebase/7.15.5/firebase-app.js"></script>
-    <script src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -48,13 +52,42 @@
           <hr>
           <div id="output"></div>
       </div>
-    </center>
-      <script src="./chat.js"></script>
+      
+    <div id="wrapper">
+      <div id="page-banner">
+        <h1 class="title">Let's play with DOM!</h1>
+        <p>Blogs</p>
+        <form id="search-blogs">
+          <input type="text" placeholder="Search blogs..." />
+        </form>
+      </div>
+      <div id="blog-list">
+        <h2 class="title">Blog List</h2>
+        <ul></ul>
+      </div>
+      <form id="add-blog">
+        <div>
+          <input type="checkbox" id="hide" />
+          <label for="hide">Hide all blogs</label>
+        </div>
+        <div class="add-wrapper">
+          <h2>Add Blog</h2>
+          <input type="text" id="add-name" placeholder="Add a blog name..." />
+          <input type="text" id="add-body" placeholder="Add a blog body..." />
+          <button>Add</button>
+        </div>
+      </form>
+
+    </div>
+
+
+  </center>
 
     </main>
 </body>
 <footer>
 </footer>
+<script src="tarminal.js"></script>
 <script src="index.js"></script>
-
+<script src="chat.js"></script>
 </html>

@@ -28,13 +28,5 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "firebase": "^7.15.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ykch75/myblog.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ykch75/myblog/issues"
-  },
-  "homepage": "https://github.com/ykch75/myblog#readme"
+  }
 }
