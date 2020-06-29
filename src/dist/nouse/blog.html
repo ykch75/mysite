@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="blog.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<body>
+  <header>
+    <img src="../assets/818chan.JPG" alt="logo" height="50" width="50" />
+    <nav>
+      <a href="#" id="menu-icon"></a>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutme.html">aboutme</a></li>
+        <li><a href="./blog.html" class="current">blog</a></li>
+        <li><a href="./twitter.html">Twitter</a></li>
+        <li><a href="https://note.com/818chan">note</a></li>
+        <li><a href="https://suzuri.jp/818chan_">store</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="wrapper">
+
+      <div id="page-banner">
+        <h1 class="title">Let's play with DOM!</h1>
+
+        <p>Blogs</p>
+        <form id="search-blogs">
+          <input type="text" placeholder="Search blogs..." />
+        </form>
+
+      </div>
+
+      <div id="blog-list">
+        <h2 class="title">Blog List</h2>
+        <ul>
+          <!-- でもここってリストでしょう？ -->
+          <!-- ここに追加したいよね -->
+        </ul>
+      </div>
+
+      <!-- なんでここに追加くるんですか？ -->
+      <!-- これは追加アクションの編集画面か -->
+      <form id="add-blog">
+        <div>
+          <input type="checkbox" id="hide" />
+          <label for="hide">Hide all blogs</label>
+        </div>
+        <div>
+          <input type="text" id="add-input" placeholder="Add a blog..." />
+          <button>Add</button>
+        </div>
+      </form>
+
+      <!-- 理解したメル -->
+    </div>
+  </main>
+  <script src="blog.js"></script>
+</body>
+</html>

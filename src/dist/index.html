@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="../assets/818chan.JPG" alt="logo" height="50" width="50" />
+        <nav>
+          <a href="#" id="menu-icon"></a>
+          <ul>
+            <li><a href="./index.html" class="current">Home</a></li>
+            <li><a href="./aboutme.html">aboutme</a></li>
+            <!-- <li><a href="./blog.html">blog</a></li> -->
+            <li><a href="./twitter.html">Twitter</a></li>
+            <li><a href="https://note.com/818chan">note</a></li>
+            <li><a href="https://suzuri.jp/818chan_">store</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+          <center><h1>MyBlog</h1></center>
+      <div class="hero__terminal">
+        <pre><code class="shell-session demo"><span>818chan ~ $ </span></code>
+        </pre>
+      </div>
+      <!--記事--><center>
+      <h1>BlogList</h1>
+      
+      <div>
+        <br>
+        <h2>AddForm</h2>
+          <div>
+              Title<br><input type="text" id="name">
+          </div>
+          <br>
+          <div>
+              Contents<br><textarea id="message" row="10"></textarea><br>
+              <br>
+              <button id="send">send</button>
+          </div>
+          <hr>
+          <div id="output"></div>
+      </div>
+      
+    <div id="wrapper">
+      <div id="page-banner">
+        <h1 class="title">Let's play with DOM!</h1>
+        <p>Blogs</p>
+        <form id="search-blogs">
+          <input type="text" placeholder="Search blogs..." />
+        </form>
+      </div>
+      <div id="blog-list">
+        <h2 class="title">Blog List</h2>
+        <ul></ul>
+      </div>
+      <form id="add-blog">
+        <div>
+          <input type="checkbox" id="hide" />
+          <label for="hide">Hide all blogs</label>
+        </div>
+        <div class="add-wrapper">
+          <h2>Add Blog</h2>
+          <input type="text" id="add-name" placeholder="Add a blog name..." />
+          <input type="text" id="add-body" placeholder="Add a blog body..." />
+          <button>Add</button>
+        </div>
+      </form>
+
+    </div>
+
+
+  </center>
+
+    </main>
+</body>
+<footer>
+</footer>
+<script src="tarminal.js"></script>
+<script src="index.js"></script>
+<script src="chat.js"></script>
+</html>
